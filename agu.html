@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>AGU 2025 — Poster Presentation | Ana Stringer</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="description" content="AGU 2025 Poster Presentation: U-Net model for landfast ice edge detection in Sentinel-2 optical imagery." />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+	/* ===== Arctic palette ===== */
+	body { background: #f4f8fb; }
+
+	#wrapper > .bg {
+		background-image: none !important;
+		background-color: #f4f8fb !important;
+	}
+
+	#header { background: transparent; }
+	#header .logo {
+		color: #1a4a7a !important;
+		border-color: #2c6fad !important;
+		font-family: 'Inter', sans-serif;
+	}
+	#header .logo:hover {
+		color: #5a9fd4 !important;
+		border-color: #5a9fd4 !important;
+	}
+
+	#nav {
+		background: rgba(26, 74, 122, 0.92) !important;
+		backdrop-filter: blur(10px);
+	}
+	#nav ul.links li.active { background-color: #2c6fad !important; }
+	#nav ul.links li.active a { color: #ffffff !important; }
+	#nav ul.links li a:hover { background-color: rgba(90, 159, 212, 0.25) !important; }
+
+	#main {
+		background-color: #f4f8fb !important;
+		font-family: 'Inter', sans-serif;
+	}
+	#main h1, #main h2, #main h3 {
+		color: #1a4a7a !important;
+		font-family: 'Inter', sans-serif;
+	}
+	#main p {
+		color: #2a3038;
+		font-family: 'Inter', sans-serif;
+		line-height: 1.85;
+	}
+
+	#copyright {
+		background: #1a4a7a;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	/* ===== Hero banner ===== */
+	.page-hero {
+		width: 100%;
+		max-height: 70vh;
+		object-fit: contain;
+		background: #eef2f5;
+		border-radius: 8px;
+		margin-bottom: 2rem;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+	}
+
+	/* ===== Photo grid ===== */
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		margin: 2rem 0;
+	}
+	.photo-grid figure { margin: 0; }
+	.photo-grid img,
+	.photo-grid video {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 6px;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+		display: block;
+	}
+	.photo-grid figcaption {
+		font-size: 0.88rem;
+		color: #5a6a78;
+		margin-top: 0.5rem;
+		font-style: italic;
+		line-height: 1.5;
+	}
+
+	/* Full-width media */
+	.full-width-media { margin: 2rem 0; }
+	.full-width-media img,
+	.full-width-media video {
+		width: 100%;
+		border-radius: 6px;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+	}
+	.full-width-media figcaption {
+		font-size: 0.88rem;
+		color: #5a6a78;
+		margin-top: 0.5rem;
+		font-style: italic;
+		line-height: 1.5;
+	}
+
+	/* Info box */
+	.info-box {
+		background: rgba(26, 74, 122, 0.06);
+		border-left: 4px solid #2c6fad;
+		padding: 1.25rem 1.5rem;
+		border-radius: 0 6px 6px 0;
+		margin: 2rem 0;
+	}
+	.info-box strong { color: #1a4a7a; }
+
+	/* Responsive */
+	@media screen and (max-width: 736px) {
+		.photo-grid { grid-template-columns: 1fr; }
+		.photo-grid img, .photo-grid video { height: auto; }
+	}
+</style>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper">
+
+<header id="header">
+<a href="index.html" class="logo">Ana Stringer</a>
+</header>
+
+<nav id="nav">
+<ul class="links">
+<li><a href="index.html">Home</a></li>
+<li><a href="kivalina.html">Kivalina</a></li>
+<li><a href="qikiqtarjuaq.html">Qikiqtarjuaq</a></li>
+<li><a href="cv.pdf">CV</a></li>
+</ul>
+<ul class="icons">
+<li><a href="https://github.com/amstringer0303" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+</ul>
+</nav>
+
+<div id="main">
+
+<article class="post">
+<header class="major">
+<h1>AGU 2025</h1>
+<p>Poster Presentation · New Orleans, Louisiana</p>
+</header>
+
+<!-- Hero: The poster itself -->
+<img src="images/agu/IMG_5487.jpg" alt="AGU Poster Presentation on Landfast Ice Edge Detection using Sentinel-2 and U-Net" class="page-hero" />
+
+<!-- Overview -->
+<p>
+In December 2025, I attended the <strong>American Geophysical Union (AGU) Fall Meeting</strong>
+in New Orleans to present my research on automating the detection of Arctic landfast sea ice edges.
+The poster focused on sharing the <strong>U-Net deep learning model</strong> I trained to automatically
+delineate the landfast ice edge in highly variable Sentinel-2 optical imagery.
+</p>
+
+<div class="info-box">
+<strong>Conference:</strong> AGU Fall Meeting 2025 (New Orleans, LA)<br/>
+<strong>Topic:</strong> Automated Landfast Ice Edge Detection<br/>
+<strong>Methods:</strong> U-Net deep learning model, Sentinel-2 optical imagery, coastal mapping<br/>
+</div>
+
+<h2>Presenting the U-Net Model</h2>
+
+<p>
+Detecting the landfast ice edge is a critical task for understanding coastal Arctic dynamics,
+climate change impacts, and accessibility for local communities who rely on the ice for hunting
+and travel. My work leverages machine learning to streamline this process, effectively training
+a U-Net model to handle the complexities of optical satellite imagery, including cloud cover,
+shadows, and varying ice textures.
+</p>
+
+<div class="photo-grid">
+
+<figure>
+<img src="images/agu/IMG_9715.jpg" alt="Ana Stringer presenting the U-Net model at the AGU poster session" />
+<figcaption>Discussing the U-Net architecture and the results of the landfast ice edge detection with attendees at the poster session.</figcaption>
+</figure>
+
+<figure>
+<img src="images/agu/IMG_9718.jpg" alt="Close up of the AGU poster session in New Orleans" />
+<figcaption>Engaging with other coastal researchers and sharing insights on using Sentinel-2 imagery for environmental monitoring.</figcaption>
+</figure>
+
+</div>
+
+<h2>Conference Takeaways</h2>
+
+<p>
+Sharing this work at AGU was an incredible opportunity to connect with other scientists
+working at the intersection of modeling, remote sensing, and Arctic climate change. The
+feedback forms an important part of refining the model to make it more robust across different
+Arctic regions and seasons.
+</p>
+
+<div class="photo-grid" style="grid-template-columns: 1fr;">
+
+<figure class="full-width-media">
+<img src="images/agu/IMG_5508.jpg" alt="Detailed view of the mapping and U-Net charts on the poster" style="max-height: 500px; object-fit: contain; background: #eaeff5;" />
+<figcaption>A closer look at the poster details, showing the comparison between the U-Net predictions and the manually digitized landfast ice edge.</figcaption>
+</figure>
+
+<figure class="full-width-media">
+<video controls playsinline preload="metadata" style="max-height: 500px; background: #000;">
+<source src="images/agu/IMG_5526.mp4" type="video/mp4" />
+Your browser does not support the video tag.
+</video>
+<figcaption>A quick glimpse of the atmosphere at the AGU Fall Meeting 2025 in New Orleans.</figcaption>
+</figure>
+
+</div>
+
+<ul class="actions">
+<li><a href="index.html" class="button">Back to Home</a></li>
+</ul>
+
+</article>
+
+</div>
+
+<div id="copyright">
+<ul><li>© Ana Stringer</li><li>Design: HTML5 UP</li></ul>
+</div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
