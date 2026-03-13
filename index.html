@@ -1,8 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ana Stringer</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* BASE */
+
+body{
+margin:0;
+font-family:system-ui,-apple-system,sans-serif;
+background:#f8f9fb;
+color:#222;
+scroll-behavior:smooth;
+}
+
+/* SCROLL PROGRESS BAR */
+
+#progress{
+position:fixed;
+top:0;
+left:0;
+height:3px;
+background:#0077b5;
+width:0%;
+z-index:9999;
+}
+
+/* LAYOUT */
+
+#wrapper{
+display:flex;
+}
+
+/* SIDEBAR */
+
+#sidebar{
+width:260px;
+height:100vh;
+position:fixed;
+left:0;
+top:0;
+background:white;
+padding:40px;
+border-right:1px solid #eee;
+}
+
+#sidebar h2{
+margin-top:0;
+}
+
+#sidebar nav ul{
+list-style:none;
+padding:0;
+}
+
+#sidebar nav li{
+margin:15px 0;
+}
+
+#sidebar a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+transition:.2s;
+}
+
+#sidebar a:hover{
+color:#0077b5;
+}
+
+/* MAIN CONTENT */
+
+#main{
+margin-left:320px;
+padding:60px;
+max-width:800px;
+}
+
+section{
+margin-bottom:80px;
+}
+
+/* SOCIAL ICONS */
+
+.social{
+margin-top:30px;
+display:flex;
+gap:12px;
+}
+
+.bubble{
+width:40px;
+height:40px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:18px;
+transition:.25s;
+text-decoration:none;
+}
+
+.github{
+background:#333;
+}
+
+.linkedin{
+background:#0077b5;
+}
+
+.bubble:hover{
+transform:translateY(-3px);
+box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* FLOATING CONTACT BUTTON */
+
+.contact-bubble{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#0077b5;
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+text-decoration:none;
+transition:.25s;
+}
+
+.contact-bubble:hover{
+transform:scale(1.1);
+}
+
+</style>
+
+</head>
+
 <body>
+
+<div id="progress"></div>
 
 <div id="wrapper">
 
-<!-- Sidebar -->
+<!-- SIDEBAR -->
+
 <div id="sidebar">
 
 <h2>Ana Stringer</h2>
@@ -14,28 +170,36 @@ Duke University
 </p>
 
 <nav>
+
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#research">Research</a></li>
 <li><a href="#fieldwork">Fieldwork</a></li>
 <li><a href="cv.pdf">CV</a></li>
 </ul>
+
 </nav>
 
-<h3>Links</h3>
+<div class="social">
 
-<ul>
-<li><a href="https://github.com/amstringer0303">GitHub</a></li>
-<li><a href="https://www.linkedin.com/in/ana-stringer-9b6141206/">LinkedIn</a></li>
-</ul>
+<a href="https://github.com/amstringer0303" class="bubble github">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/ana-stringer-9b6141206/" class="bubble linkedin">
+<i class="fab fa-linkedin-in"></i>
+</a>
 
 </div>
 
+</div>
 
-<!-- Main Content -->
+<!-- MAIN CONTENT -->
+
 <div id="main">
 
 <section id="about">
+
 <h1>Ana Stringer</h1>
 
 <p>
@@ -45,7 +209,6 @@ machine learning, and field observations.
 </p>
 
 </section>
-
 
 <section id="research">
 
@@ -58,7 +221,6 @@ dynamics influence mobility across Arctic coastal communities.
 </p>
 
 </section>
-
 
 <section id="fieldwork">
 
@@ -76,4 +238,28 @@ community-informed research approaches.
 
 </div>
 
+<!-- FLOATING CONTACT BUTTON -->
+
+<a href="mailto:ana.stringer@duke.edu" class="contact-bubble">
+<i class="fas fa-envelope"></i>
+</a>
+
+<script>
+
+/* SCROLL PROGRESS BAR */
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop || document.documentElement.scrollTop;
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progress").style.width=scrolled+"%";
+
+};
+
+</script>
+
 </body>
+</html>
+
