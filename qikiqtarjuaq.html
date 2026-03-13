@@ -1,11 +1,131 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Qikiqtarjuaq Sea Ice Field School</title>
+<title>Qikiqtarjuaq Field School — Ana Stringer</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+	/* ===== Arctic palette (from landing page) ===== */
+	body { background: #f4f8fb; }
+
+	#wrapper > .bg {
+		background-image: none !important;
+		background-color: #f4f8fb !important;
+	}
+
+	#header {
+		background: transparent;
+	}
+	#header .logo {
+		color: #1a4a7a !important;
+		border-color: #2c6fad !important;
+		font-family: 'Inter', sans-serif;
+	}
+	#header .logo:hover {
+		color: #5a9fd4 !important;
+		border-color: #5a9fd4 !important;
+	}
+
+	#nav {
+		background: rgba(26, 74, 122, 0.92) !important;
+		backdrop-filter: blur(10px);
+	}
+	#nav ul.links li.active { background-color: #2c6fad !important; }
+	#nav ul.links li.active a { color: #ffffff !important; }
+	#nav ul.links li a:hover { background-color: rgba(90, 159, 212, 0.25) !important; }
+
+	#main {
+		background-color: #f4f8fb !important;
+		font-family: 'Inter', sans-serif;
+	}
+	#main h1, #main h2, #main h3 {
+		color: #1a4a7a !important;
+		font-family: 'Inter', sans-serif;
+	}
+	#main p {
+		color: #2a3038;
+		font-family: 'Inter', sans-serif;
+		line-height: 1.85;
+	}
+
+	#copyright {
+		background: #1a4a7a;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	/* ===== Hero banner for this page ===== */
+	.page-hero {
+		width: 100%;
+		height: 50vh;
+		min-height: 320px;
+		object-fit: cover;
+		border-radius: 8px;
+		margin-bottom: 2rem;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+	}
+
+	/* ===== Photo grid ===== */
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		margin: 2rem 0;
+	}
+	.photo-grid figure {
+		margin: 0;
+	}
+	.photo-grid img,
+	.photo-grid video {
+		width: 100%;
+		border-radius: 6px;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+		display: block;
+	}
+	.photo-grid figcaption {
+		font-size: 0.88rem;
+		color: #5a6a78;
+		margin-top: 0.5rem;
+		font-style: italic;
+		line-height: 1.5;
+	}
+
+	/* Full-width media */
+	.full-width-media {
+		margin: 2rem 0;
+	}
+	.full-width-media img,
+	.full-width-media video {
+		width: 100%;
+		border-radius: 6px;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+	}
+	.full-width-media figcaption {
+		font-size: 0.88rem;
+		color: #5a6a78;
+		margin-top: 0.5rem;
+		font-style: italic;
+		line-height: 1.5;
+	}
+
+	/* Info box */
+	.info-box {
+		background: rgba(26, 74, 122, 0.06);
+		border-left: 4px solid #2c6fad;
+		padding: 1.25rem 1.5rem;
+		border-radius: 0 6px 6px 0;
+		margin: 2rem 0;
+	}
+	.info-box strong { color: #1a4a7a; }
+
+	/* Responsive */
+	@media screen and (max-width: 736px) {
+		.photo-grid { grid-template-columns: 1fr; }
+		.page-hero { height: 35vh; min-height: 200px; }
+	}
+</style>
 </head>
 
 <body class="is-preload">
@@ -22,10 +142,8 @@
 <li class="active"><a href="qikiqtarjuaq.html">Qikiqtarjuaq</a></li>
 <li><a href="cv.pdf">CV</a></li>
 </ul>
-
 <ul class="icons">
 <li><a href="https://github.com/amstringer0303" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-<li><a href="mailto:ana.stringer@duke.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 </ul>
 </nav>
 
@@ -33,34 +151,153 @@
 
 <article class="post">
 <header class="major">
-<h1>Qikiqtarjuaq, Nunavut</h1>
-<p>Advanced Field School on Arctic Sea Ice · April 2025</p>
+<h1>Qikiqtarjuaq Sea Ice Field School</h1>
+<p>Advanced Field School on Arctic Sea Ice: Tracking Changes Across Scales<br/>
+April 9 – 18, 2025 · Qikiqtarjuaq, Nunavut</p>
 </header>
 
-<a class="image main"><img src="images/qikiqtarjuaq.jpg" alt="Qikiqtarjuaq sea ice field school" /></a>
+<!-- Hero image: Ana on the sea ice -->
+<img src="images/qik/IMG_2801_2.jpg" alt="Ana Stringer standing on landfast sea ice near Qikiqtarjuaq, Nunavut" class="page-hero" />
+
+<!-- Overview -->
 
 <p>
-In April 2025, I participated in the Advanced Field School on Arctic Sea Ice
-in Qikiqtarjuaq, Nunavut. The field school focused on tracking sea ice change
-across scales and brought together students and researchers working across
-remote sensing, marine systems, Arctic environmental science, and related
-fields.
+In April 2025, I participated in the
+<a href="https://sentinelnorth.ulaval.ca/" style="color: #2c6fad;">Sentinel North</a>
+<strong>Advanced Field School on Arctic Sea Ice</strong>,
+hosted at the Qikiqtarjuaq Research Station on Broughton Island, Nunavut.
+Run by Université Laval and the UAK international research initiative,
+the ten-day program brought together graduate students and postdoctoral
+fellows from across disciplines — remote sensing, marine biology, optics-photonics,
+biochemistry, and Arctic environmental science — to study sea ice change
+from micro-scale crystal structure to landscape-level dynamics.
+</p>
+
+<div class="info-box">
+<strong>Program:</strong> Sentinel North / UAK Advanced Field School<br/>
+<strong>Host:</strong> Université Laval · Qikiqtarjuaq Research Station<br/>
+<strong>Location:</strong> Qikiqtarjuaq (Broughton Island), Nunavut, Canada<br/>
+<strong>Dates:</strong> April 9 – 18, 2025<br/>
+<strong>Focus:</strong> Tracking sea ice changes across scales — optics, biology, physics, remote sensing, and community knowledge
+</div>
+
+<!-- Arrival photo -->
+<figure class="full-width-media">
+<img src="images/qik/IMG_2509_2.jpg" alt="Handmade banner at the Qikiqtarjuaq Terminal Building featuring Inuktitut syllabics and scenes of Arctic life" />
+<figcaption>Arriving in Qikiqtarjuaq — a handmade felt banner at the terminal building features Inuktitut syllabics alongside scenes of traditional Arctic life: dog teams, igloos, and seal hunting.</figcaption>
+</figure>
+
+<h2>On the Ice</h2>
+
+<p>
+The field school combined classroom lectures with extensive time on the
+landfast sea ice surrounding Qikiqtarjuaq. We conducted hands-on sampling
+and observations — measuring ice cores, studying crystal micro-structure
+under polarized light, and documenting snow-ice interactions. The
+interdisciplinary approach meant that biologists, physicists, and remote
+sensing researchers were all working side-by-side, learning from one
+another's tools and perspectives.
+</p>
+
+<!-- Photo grid: field scenes -->
+<div class="photo-grid">
+
+<figure>
+<img src="images/qik/IMG_2802_2.jpg" alt="Ana Stringer on the sea ice with mountains and icebergs in the background" />
+<figcaption>Out on the landfast ice — with the fjord mountains and icebergs of Cumberland Sound stretching out behind me.</figcaption>
+</figure>
+
+<figure>
+<video controls playsinline preload="metadata">
+<source src="images/qik/IMG_2582.MOV" type="video/quicktime" />
+Your browser does not support the video tag.
+</video>
+<figcaption>A quick look at the sea ice environment during fieldwork near Qikiqtarjuaq.</figcaption>
+</figure>
+
+</div>
+
+<h2>Fieldwork & Exploration</h2>
+
+<p>
+Beyond the formal curriculum, some of the most memorable moments came from
+exploring the landscape around Qikiqtarjuaq by snowmobile and on foot. The
+vast expanse of landfast ice, the towering icebergs frozen into Cumberland
+Sound, and the dramatic light of the high Arctic spring made every excursion
+extraordinary. These experiences reinforced why place-based fieldwork is
+irreplaceable — no satellite image can capture the feeling of standing on
+ice that stretches to the horizon.
+</p>
+
+<div class="photo-grid">
+
+<figure>
+<video controls playsinline preload="metadata">
+<source src="images/qik/IMG_2550_2.MOV" type="video/quicktime" />
+Your browser does not support the video tag.
+</video>
+<figcaption>Exploring the sea ice and coastline around Qikiqtarjuaq by snowmobile.</figcaption>
+</figure>
+
+<figure>
+<video controls playsinline preload="metadata">
+<source src="images/qik/IMG_2624_2.MOV" type="video/quicktime" />
+Your browser does not support the video tag.
+</video>
+<figcaption>Traversing the ice — the scale of the frozen landscape is hard to capture in a single frame.</figcaption>
+</figure>
+
+</div>
+
+<h2>Community & Inuit Knowledge</h2>
+
+<p>
+A central part of the field school was learning from and engaging with the
+community of Qikiqtarjuaq. The program highlighted Inuit knowledge systems
+and local sea ice monitoring initiatives, including the
+<a href="https://smartice.org/" style="color: #2c6fad;">SmartIce</a>
+program, which combines community-based monitoring with technology to
+track sea ice conditions. Conversations with community members provided
+perspectives on how changing ice affects travel, hunting, and daily life —
+insights that no dataset alone can provide.
 </p>
 
 <p>
-Hosted at the Qikiqtarjuaq Research Station, the program combined lectures,
-hands-on field activities, and interdisciplinary discussion centered on Arctic
-sea ice. The field school examined sea ice from small-scale structure to
-broader landscape patterns, with attention to how changing ice conditions shape
-ecosystems, northern communities, and climate processes.
+As someone who grew up in Utqiaġvik, this resonated deeply with me.
+The field school reinforced my commitment to research that is community-engaged
+and grounded in the realities of the people most affected by Arctic change.
 </p>
 
+<!-- More videos -->
+<div class="photo-grid">
+
+<figure>
+<video controls playsinline preload="metadata">
+<source src="images/qik/IMG_2593.MOV" type="video/quicktime" />
+Your browser does not support the video tag.
+</video>
+<figcaption>The Arctic landscape near Qikiqtarjuaq — icebergs locked into the landfast ice of Cumberland Sound.</figcaption>
+</figure>
+
+<figure>
+<video controls playsinline preload="metadata">
+<source src="images/qik/IMG_2725_3.MOV" type="video/quicktime" />
+Your browser does not support the video tag.
+</video>
+<figcaption>Late-day light over the ice — one of the many unforgettable scenes from the field school.</figcaption>
+</figure>
+
+</div>
+
+<h2>Takeaways</h2>
+
 <p>
-The experience provided training in field-based observation of sea ice and
-exposure to cross-disciplinary Arctic research approaches. It also emphasized
-engagement with Inuit knowledge and community perspectives on sea ice,
-environmental change, and the challenges northern communities face under
-climate variability and warming conditions.
+The Qikiqtarjuaq field school was a formative experience. It deepened my
+technical skills in sea ice observation, broadened my understanding of
+interdisciplinary Arctic science, and — most importantly — strengthened my
+belief that meaningful research must be rooted in community engagement and
+reciprocity. I'm grateful to the Sentinel North team, Université Laval,
+and the community of Qikiqtarjuaq for making this possible.
 </p>
 
 <ul class="actions">
@@ -70,22 +307,6 @@ climate variability and warming conditions.
 </article>
 
 </div>
-
-<footer id="footer">
-<section class="split contact">
-
-<section>
-<h3>Email</h3>
-<p><a href="mailto:ana.stringer@duke.edu">ana.stringer@duke.edu</a></p>
-</section>
-
-<section>
-<h3>GitHub</h3>
-<p><a href="https://github.com/amstringer0303">github.com/amstringer0303</a></p>
-</section>
-
-</section>
-</footer>
 
 <div id="copyright">
 <ul><li>© Ana Stringer</li><li>Design: HTML5 UP</li></ul>
