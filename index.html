@@ -1,265 +1,195 @@
-<!DOCTYPE html>
-
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Ana Stringer</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-
-/* BASE */
-
-body{
-margin:0;
-font-family:system-ui,-apple-system,sans-serif;
-background:#f8f9fb;
-color:#222;
-scroll-behavior:smooth;
-}
-
-/* SCROLL PROGRESS BAR */
-
-#progress{
-position:fixed;
-top:0;
-left:0;
-height:3px;
-background:#0077b5;
-width:0%;
-z-index:9999;
-}
-
-/* LAYOUT */
-
-#wrapper{
-display:flex;
-}
-
-/* SIDEBAR */
-
-#sidebar{
-width:260px;
-height:100vh;
-position:fixed;
-left:0;
-top:0;
-background:white;
-padding:40px;
-border-right:1px solid #eee;
-}
-
-#sidebar h2{
-margin-top:0;
-}
-
-#sidebar nav ul{
-list-style:none;
-padding:0;
-}
-
-#sidebar nav li{
-margin:15px 0;
-}
-
-#sidebar a{
-text-decoration:none;
-color:#444;
-font-weight:500;
-transition:.2s;
-}
-
-#sidebar a:hover{
-color:#0077b5;
-}
-
-/* MAIN CONTENT */
-
-#main{
-margin-left:320px;
-padding:60px;
-max-width:800px;
-}
-
-section{
-margin-bottom:80px;
-}
-
-/* SOCIAL ICONS */
-
-.social{
-margin-top:30px;
-display:flex;
-gap:12px;
-}
-
-.bubble{
-width:40px;
-height:40px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:18px;
-transition:.25s;
-text-decoration:none;
-}
-
-.github{
-background:#333;
-}
-
-.linkedin{
-background:#0077b5;
-}
-
-.bubble:hover{
-transform:translateY(-3px);
-box-shadow:0 6px 16px rgba(0,0,0,0.15);
-}
-
-/* FLOATING CONTACT BUTTON */
-
-.contact-bubble{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#0077b5;
-width:50px;
-height:50px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:20px;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
-text-decoration:none;
-transition:.25s;
-}
-
-.contact-bubble:hover{
-transform:scale(1.1);
-}
-
-</style>
-
+<title>Ana Stringer | Arctic Climate Research</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body>
+<body class="is-preload">
 
-<div id="progress"></div>
+<div id="wrapper" class="fade-in">
 
-<div id="wrapper">
-
-<!-- SIDEBAR -->
-
-<div id="sidebar">
-
-<h2>Ana Stringer</h2>
-
+<!-- Intro -->
+<div id="intro">
+<h1>Ana Stringer</h1>
 <p>
-Ph.D. Student<br>
-Earth & Climate Sciences<br>
-Duke University
+Ph.D. Student — Earth & Climate Sciences<br>
+Nicholas School of the Environment, Duke University
 </p>
 
-<nav>
+<p>
+My research examines Arctic coastal systems and how sea ice change affects
+community mobility and climate risk. I combine satellite remote sensing,
+machine learning, and field observations to understand landfast ice dynamics
+and travel accessibility for Arctic communities.
+</p>
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#research">Research</a></li>
-<li><a href="#fieldwork">Fieldwork</a></li>
+<ul class="actions">
+<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
+</ul>
+</div>
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo">Ana Stringer</a>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+<ul class="links">
+<li class="active"><a href="index.html">Home</a></li>
 <li><a href="cv.pdf">CV</a></li>
 </ul>
 
+<ul class="icons">
+<li><a href="https://github.com/amstringer0303" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+</ul>
 </nav>
 
-<div class="social">
-
-<a href="https://github.com/amstringer0303" class="bubble github">
-<i class="fab fa-github"></i>
-</a>
-
-<a href="https://www.linkedin.com/in/ana-stringer-9b6141206/" class="bubble linkedin">
-<i class="fab fa-linkedin-in"></i>
-</a>
-
-</div>
-
-</div>
-
-<!-- MAIN CONTENT -->
-
+<!-- Main -->
 <div id="main">
 
-<section id="about">
+<!-- Featured Research -->
+<article class="post featured">
 
-<h1>Ana Stringer</h1>
-
-<p>
-I study Arctic coastal systems and how sea ice change affects community
-mobility and climate risk. My research combines satellite remote sensing,
-machine learning, and field observations.
-</p>
-
-</section>
-
-<section id="research">
-
+<header class="major">
 <h2>Research</h2>
 
 <p>
-My doctoral work focuses on automated detection of landfast ice edges
-using Sentinel-2 imagery and U-Net models, and examining how freeze-up
-dynamics influence mobility across Arctic coastal communities.
+I study landfast sea ice dynamics and coastal climate risk in Arctic
+communities. My work combines satellite observations, machine learning,
+and community knowledge to understand how environmental change affects
+travel routes and subsistence access.
 </p>
-
-</section>
-
-<section id="fieldwork">
-
-<h2>Fieldwork</h2>
 
 <p>
-Research locations include Kivalina, Utqiaġvik, and Qikiqtarjuaq. Field
-campaigns combine environmental observation, satellite validation, and
-community-informed research approaches.
+Current work includes developing a U-Net model to detect landfast ice
+edges from Sentinel-2 imagery and analyzing freeze-up dynamics in Arctic
+coastal systems.
 </p>
+
+</header>
+
+<a class="image main"><img src="images/arctic_field.jpg" alt="Arctic fieldwork"/></a>
+
+</article>
+
+<!-- Fieldwork Gallery -->
+<section class="posts">
+
+<article>
+<header>
+<h2>Kivalina — Master's Research</h2>
+</header>
+
+<a class="image fit"><img src="images/kivalina.jpg" alt="Kivalina fieldwork"/></a>
+
+<p>
+Master's research examining sea ice thickness and subsistence access using
+ICESat-2 altimetry and community interviews in Kivalina, Alaska.
+</p>
+
+</article>
+
+
+<article>
+<header>
+<h2>Qikiqtarjuaq Field School</h2>
+</header>
+
+<a class="image fit"><img src="images/qikiqtarjuaq.jpg" alt="Qikiqtarjuaq field school"/></a>
+
+<p>
+Field training in Arctic glaciology and environmental observation in
+Qikiqtarjuaq, Nunavut.
+</p>
+
+</article>
+
+
+<article>
+<header>
+<h2>Utqiaġvik Research Scoping — Aug 2025</h2>
+</header>
+
+<a class="image fit"><img src="images/utqiagvik.jpg" alt="Utqiagvik research"/></a>
+
+<p>
+Research planning and environmental observation along Alaska's Arctic coast.
+</p>
+
+</article>
+
+
+<article>
+<header>
+<h2>Winter Fieldwork — Jan 2026</h2>
+</header>
+
+<a class="image fit"><img src="images/winter_field.jpg" alt="Winter fieldwork"/></a>
+
+<p>
+Sea ice observations and environmental data collection during winter
+conditions.
+</p>
+
+</article>
+
+
+<article>
+<header>
+<h2>AGU Fall Meeting — Dec 2025</h2>
+</header>
+
+<a class="image fit"><img src="images/agu_poster.jpg" alt="AGU poster"/></a>
+
+<p>
+Presentation on automated detection of landfast ice and nearshore
+polynyas using U-Net models applied to Sentinel-2 imagery.
+</p>
+
+</article>
 
 </section>
 
 </div>
 
+<!-- Footer -->
+<footer id="footer">
+
+<section class="split contact">
+
+<section>
+<h3>Email</h3>
+<p><a href="#">ana.stringer@duke.edu</a></p>
+</section>
+
+<section>
+<h3>GitHub</h3>
+<p><a href="https://github.com/amstringer0303">github.com/amstringer0303</a></p>
+</section>
+
+</section>
+
+</footer>
+
+<div id="copyright">
+<ul><li>© Ana Stringer</li><li>Design: HTML5 UP</li></ul>
 </div>
 
-<!-- FLOATING CONTACT BUTTON -->
+</div>
 
-<a href="mailto:ana.stringer@duke.edu" class="contact-bubble">
-<i class="fas fa-envelope"></i>
-</a>
-
-<script>
-
-/* SCROLL PROGRESS BAR */
-
-window.onscroll=function(){
-
-let winScroll=document.body.scrollTop || document.documentElement.scrollTop;
-let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-let scrolled=(winScroll/height)*100;
-
-document.getElementById("progress").style.width=scrolled+"%";
-
-};
-
-</script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
-
