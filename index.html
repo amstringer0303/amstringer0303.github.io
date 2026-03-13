@@ -7,6 +7,103 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+	/* Side-by-side intro layout */
+	#intro {
+		flex-direction: row !important;
+		justify-content: center !important;
+		align-items: center !important;
+		gap: 4rem;
+		text-align: left !important;
+	}
+
+	#intro .intro-left {
+		flex: 0 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	#intro .intro-right {
+		flex: 1 1 auto;
+		max-width: 36rem;
+	}
+
+	#intro .intro-right h2 {
+		color: #ffffff;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	#intro .intro-right p {
+		font-size: 1.1rem;
+		font-style: italic;
+		line-height: 1.75;
+		opacity: 0.85;
+		text-align: left;
+	}
+
+	/* Circular icon buttons */
+	.circle-buttons {
+		display: flex;
+		gap: 1.25rem;
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0 0 0;
+		justify-content: center;
+	}
+
+	.circle-buttons li {
+		padding: 0;
+	}
+
+	.circle-buttons a {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 50% !important;
+		background: transparent;
+		border: 2px solid #ffffff !important;
+		box-shadow: none !important;
+		color: #ffffff !important;
+		font-size: 1.4rem;
+		padding: 0 !important;
+		transition: all 0.3s ease;
+		text-decoration: none;
+	}
+
+	.circle-buttons a:hover {
+		border-color: #18bfef !important;
+		color: #18bfef !important;
+		transform: scale(1.1);
+		box-shadow: 0 0 15px rgba(24, 191, 239, 0.3) !important;
+	}
+
+	.circle-buttons a:before {
+		margin: 0 !important;
+		padding: 0 !important;
+		width: auto !important;
+		font-size: 1.4rem !important;
+	}
+
+	/* Responsive: stack on smaller screens */
+	@media screen and (max-width: 980px) {
+		#intro {
+			flex-direction: column !important;
+			text-align: center !important;
+			gap: 2rem;
+		}
+		#intro .intro-right {
+			text-align: center;
+		}
+		#intro .intro-right p {
+			text-align: center;
+		}
+	}
+</style>
 </head>
 
 <body class="is-preload">
@@ -14,13 +111,31 @@
 <div id="wrapper" class="fade-in">
 
 <div id="intro">
-<h1>Ana Stringer</h1>
 
-<ul class="actions" style="justify-content: center;">
-<li><a href="https://www.linkedin.com/in/ana-stringer-9b6141206/" class="button icon brands fa-linkedin">LinkedIn</a></li>
-<li><a href="https://github.com/amstringer0303" class="button icon brands fa-github">GitHub</a></li>
-<li><a href="mailto:ana.stringer@duke.edu" class="button icon solid fa-envelope">Email</a></li>
+<div class="intro-left">
+<h1>Ana Stringer</h1>
+<ul class="circle-buttons">
+<li><a href="https://www.linkedin.com/in/ana-stringer-9b6141206/" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
+<li><a href="https://github.com/amstringer0303" class="icon brands fa-github" title="GitHub"></a></li>
+<li><a href="mailto:ana.stringer@duke.edu" class="icon solid fa-envelope" title="Email"></a></li>
 </ul>
+</div>
+
+<div class="intro-right">
+<h2>Research</h2>
+<p>
+I study landfast sea ice dynamics and coastal climate risk in Arctic
+communities. My work combines satellite observations, machine learning,
+and community knowledge to understand how environmental change affects
+travel routes and subsistence access.
+</p>
+<p>
+Current work includes developing a U-Net model to detect landfast ice
+edges from Sentinel-2 imagery and analyzing freeze-up dynamics in Arctic
+coastal systems.
+</p>
+</div>
+
 </div>
 
 <header id="header">
@@ -39,30 +154,6 @@
 </nav>
 
 <div id="main">
-
-<article class="post featured">
-
-<header class="major">
-<h2>Research</h2>
-
-<p>
-I study landfast sea ice dynamics and coastal climate risk in Arctic
-communities. My work combines satellite observations, machine learning,
-and community knowledge to understand how environmental change affects
-travel routes and subsistence access.
-</p>
-
-<p>
-Current work includes developing a U-Net model to detect landfast ice
-edges from Sentinel-2 imagery and analyzing freeze-up dynamics in Arctic
-coastal systems.
-</p>
-
-</header>
-
-<a class="image main"><img src="images/arctic_field.jpg" alt="Arctic fieldwork"/></a>
-
-</article>
 
 <section class="posts">
 
